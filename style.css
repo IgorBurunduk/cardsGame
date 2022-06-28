@@ -186,11 +186,15 @@ body {
   padding: 0.75rem 0;
   text-align: center;
   background: #fff;
+  border: 1px solid #fff;
   border-radius: 12px;
   cursor: pointer;
 }
-.levels__item:hover {
+.levels__item:hover, .levels__item.active {
   background: #def8fd;
+}
+.levels__item.active {
+  border: 1px solid #7AC100;
 }
 @media (max-width: 570px) {
   .levels__item {
