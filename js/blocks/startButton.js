@@ -1,4 +1,4 @@
-function startButton (screen) {
+function startButton(screen) {
 
     const startButtonTemplate = templateEngine({
         tag: 'button',
@@ -7,7 +7,7 @@ function startButton (screen) {
     });
 
     startButtonTemplate.addEventListener('click', btnClickHandler);
-    
+
     screen.appendChild(startButtonTemplate);
 
     return startButtonTemplate;
@@ -16,14 +16,14 @@ function startButton (screen) {
 window.app.gameBlocks['game-btn'] = startButton;
 
 
-function btnClickHandler (evt) {
+function btnClickHandler(evt) {
     evt.preventDefault();
 
     const appBlock = document.querySelector('.app');
 
     const selectedLevel = window.app.selectedLevel;
 
-    if(!selectedLevel){
+    if (!selectedLevel) {
         alert('Нужно выбрать сложность!');
         return;
     }

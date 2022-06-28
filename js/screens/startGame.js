@@ -24,6 +24,7 @@ function startGame(appBlock) {
 
     startGameContent.appendChild(window.app.gameBlocks['levels'](startGameTemplate));
     startGameBtn.appendChild(window.app.gameBlocks['game-btn'](startGameTemplate));
+    
     appBlock.appendChild(startGameTemplate);
 
     return startGameTemplate;
