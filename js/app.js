@@ -1,18 +1,33 @@
-const levelsBlock = document.querySelector('.levels');
-const levelsBlockItems = levelsBlock.querySelectorAll('.levels__item');
-levelsBlock.addEventListener('click', levelsBlockHandler);
+document.addEventListener('DOMContentLoaded', function () {
 
+    const appBlock = document.querySelector('.app');
 
-function levelsBlockHandler (evt){
-    const target = evt.target;
-    if(target.classList.contains('levels__item')){
+    appBlock.appendChild(loadGame());
 
-        levelsBlockItems.forEach(item=>{
-            item.classList.remove('active');
-        })
+    window.onload = () => {
+        hideLoading();
 
-        target.classList.add('active');
-
-        window.app.selectedLevel = target.dataset.level;
+        window.app.gameScreens['start-game'](appBlock);
     }
+
+});
+
+function loadGame() {
+
+    const loadGameTemplate = templateEngine({
+        tag: 'img',
+        cls: 'loading',
+        attrs: {
+            src: './images/load.svg',
+            alt: 'Загружаем'
+        }
+    });
+
+    return loadGameTemplate;
+
+}
+
+function hideLoading() {
+    const loadingBlock = document.querySelector('.loading');
+    loadingBlock.remove();
 }
