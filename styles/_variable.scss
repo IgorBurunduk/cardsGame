@@ -1,0 +1,19 @@
+$bg_body: #004980;
+$bg_app: #C2F5FF;
+$bg_lvl: #fff;
+$bg_btn: #7AC100;
+
+$color_title: #004980;
+$color_lvl: #0080C1;
+$color_txt: #000;
+$color_btn: #fff;
+
+
+%flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+$mobile: 360px;
+$mobile-wide: 570px;
