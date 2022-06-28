@@ -1,0 +1,122 @@
+body {
+    min-height: 100vh;
+    height: auto;
+    min-width: 310px;
+    width: 100%;
+    background: $bg_body;
+    font-family: 'Stratos LC Web';
+    font-size: 16px;
+
+    @extend %flex-center;
+
+    @media (max-width: $mobile-wide) {
+        font-size: 15px;
+    }
+
+    @media (max-width: $mobile) {
+        font-size: 14px;
+    }
+}
+
+.app {
+    padding: 1rem 2rem;
+}
+
+.base-block {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: $bg_app;
+    border-radius: 12px;
+    width: 480px;
+    max-width:100%;
+    gap: 3rem;
+    padding: 4rem 4.375rem 3rem;
+    
+
+    &__title {
+        font-size: 2.5rem;
+        line-height: 3rem;        
+        text-align: center;
+        color: $color_title;
+
+        @media (max-width: $mobile-wide) {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+
+    &__content {
+        margin-bottom: 1rem;
+    }
+
+    &__btn {
+        text-align: center;
+    }
+
+    @media (max-width: $mobile-wide) {
+        width: 100%;
+        padding: 3rem 3.375rem 2rem;
+    }
+
+    @media (max-width: $mobile) {
+        width: 100%;
+        padding: 1.5rem 1.5rem 1rem;
+    }
+}
+
+.btn {
+    width: 246px;
+    max-width: 100%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: .5rem 1rem;
+    text-align: center;
+    background: $bg_btn;
+    color: $color_btn;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+
+    &:hover {
+        background: mix($bg_btn, #9f9);
+    }
+
+    @media (max-width: $mobile-wide) {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        width: 100%;
+    }
+}
+
+.levels {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    
+
+    &__item {
+        font-size: 4rem;
+        line-height: 4.5rem;
+        color: $color_lvl;
+        width: 6rem;
+        padding: .75rem 0;
+        text-align: center;
+        background: $bg_lvl;
+        border-radius: 12px;
+        cursor: pointer;
+
+        &:hover {
+            background: mix($bg_app, #fafafa);
+        }
+
+        @media (max-width: $mobile-wide) {
+            font-size: 2rem;
+            line-height: 2.5rem;
+            width: 3.5rem;
+        }
+
+    }
+}

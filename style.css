@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
 html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
   margin: 0;
   padding: 0;
@@ -70,4 +75,127 @@ input {
   src: local("Stratos LC Web"), local("StratosLCWeb-Regular"), url("./fonts/stratos/StratosLCWeb-Regular.eot?#iefix") format("embedded-opentype"), url("./fonts/stratos/StratosLCWeb-Regular.woff2") format("woff2"), url("./fonts/stratos/StratosLCWeb-Regular.woff") format("woff"), url("./fonts/stratos/StratosLCWeb-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  min-height: 100vh;
+  height: auto;
+  min-width: 310px;
+  width: 100%;
+  background: #004980;
+  font-family: "Stratos LC Web";
+  font-size: 16px;
+}
+@media (max-width: 570px) {
+  body {
+    font-size: 15px;
+  }
+}
+@media (max-width: 360px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+.app {
+  padding: 1rem 2rem;
+}
+
+.base-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #C2F5FF;
+  border-radius: 12px;
+  width: 480px;
+  max-width: 100%;
+  gap: 3rem;
+  padding: 4rem 4.375rem 3rem;
+}
+.base-block__title {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  text-align: center;
+  color: #004980;
+}
+@media (max-width: 570px) {
+  .base-block__title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+.base-block__content {
+  margin-bottom: 1rem;
+}
+.base-block__btn {
+  text-align: center;
+}
+@media (max-width: 570px) {
+  .base-block {
+    width: 100%;
+    padding: 3rem 3.375rem 2rem;
+  }
+}
+@media (max-width: 360px) {
+  .base-block {
+    width: 100%;
+    padding: 1.5rem 1.5rem 1rem;
+  }
+}
+
+.btn {
+  width: 246px;
+  max-width: 100%;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  background: #7AC100;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #8ae04d;
+}
+@media (max-width: 570px) {
+  .btn {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 100%;
+  }
+}
+
+.levels {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.levels__item {
+  font-size: 4rem;
+  line-height: 4.5rem;
+  color: #0080C1;
+  width: 6rem;
+  padding: 0.75rem 0;
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.levels__item:hover {
+  background: #def8fd;
+}
+@media (max-width: 570px) {
+  .levels__item {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    width: 3.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
