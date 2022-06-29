@@ -7,17 +7,8 @@ window.app = {
     selectedCards: []
 }
 
-const MESSAGES = {
-    levels: {
-        easy: '1',
-        medium: '2',
-        hard: '3'
-    },
-    titles: {
-        startGame: 'Выберите сложность',
-
-    },
-    buttons: {
-        start: 'Старт'
-    }
+const GAME_LEVELS = {
+    easy: '1',
+    medium: '2',
+    hard: '3'
 }

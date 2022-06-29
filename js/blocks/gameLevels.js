@@ -7,25 +7,25 @@ function gameLevels(screen) {
                 tag: 'div',
                 cls: 'levels__item',
                 attrs: {
-                    'data-level': Object.keys(MESSAGES.levels)[0]
+                    'data-level': Object.keys(GAME_LEVELS)[0]
                 },
-                content: MESSAGES.levels.easy
+                content: GAME_LEVELS.easy
             },
             {
                 tag: 'div',
                 cls: 'levels__item',
                 attrs: {
-                    'data-level': Object.keys(MESSAGES.levels)[1]
+                    'data-level': Object.keys(GAME_LEVELS)[1]
                 },
-                content: MESSAGES.levels.medium
+                content: GAME_LEVELS.medium
             },
             {
                 tag: 'div',
                 cls: 'levels__item',
                 attrs: {
-                    'data-level': Object.keys(MESSAGES.levels)[2]
+                    'data-level': Object.keys(GAME_LEVELS)[2]
                 },
-                content: MESSAGES.levels.hard
+                content: GAME_LEVELS.hard
             }
         ]
     });
